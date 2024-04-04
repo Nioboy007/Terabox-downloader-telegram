@@ -1,4 +1,4 @@
-const sendFile = async (i tem, ctx) => {
+const sendFile = async (item, ctx) => {
   if (item) {
     try {
       await ctx.replyWithDocument(item);
