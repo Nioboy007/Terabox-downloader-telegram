@@ -26,10 +26,10 @@ async function main() {
         messageText.includes("teraboxapp.com")
       ) {
         const details = await getDetails(messageText);
-        if (details && details.link) {
+        if (details && details.direct_link) {
           try {
             ctx.reply(`Sending Files Please Wait.!!......✨`);
-            sendFile(details.link, ctx);
+            sendFile(details.direct_link, ctx);
           } catch (e) {
             console.error(e); // Log the error for debugging
           }
